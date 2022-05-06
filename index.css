@@ -1,0 +1,93 @@
+.main-container {
+    background-image: url('images/city-at-night.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* style for black tint over background image */
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+  }
+}
+
+.filter {
+    background-color: black;
+    opacity: 0.45;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+
+.name-icon-group {
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name,.description, .under-construction  {
+    color: white;
+    
+}
+.description, .under-construction {
+    font-family: Monaco, Arial, Helvetica, sans-serif;
+}
+
+
+.name {
+    font-size: 46px;
+    font-family: Monaco, Arial, Helvetica, sans-serif;
+}
+
+.fa-linkedin-in, .fa-github {
+    color: white;
+    font-size: 30px;
+}
+
+.icon-group {
+    display: flex;
+    width: auto;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.fa-linkedin-in {
+    margin-right: 20px;
+}
+
+.name-wrapper::after {
+    content: "";
+    position: relative;
+    top: 0;
+    right: -15px;
+    display: inline-block;
+    background-color: #fff;
+    vertical-align: center;
+    width: 10px;
+    height: 29px;
+    /* 
+    Animation paramaters:
+    blink = animation-name, 
+    1s = animation-duration, 
+    step-end = animation-timing-function,
+    infinite = animation-iteration-count
+    */
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+  }
+
+  @-webkit-keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
