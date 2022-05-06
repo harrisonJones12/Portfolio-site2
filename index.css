@@ -34,7 +34,6 @@
     
 }
 .description, .under-construction {
-    /* font-family: 'Inter', sans-serif; */
     font-family: Monaco, Arial, Helvetica, sans-serif;
 }
 
@@ -65,12 +64,10 @@
     position: relative;
     top: 0;
     right: -15px;
-    /* Remove display: inline-block if not required to be on the same line as text etc */
     display: inline-block;
     background-color: #fff;
     vertical-align: center;
     width: 10px;
-    /* Set height to the line height of .text */
     height: 29px;
     /* 
     Animation paramaters:
